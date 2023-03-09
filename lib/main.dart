@@ -21,6 +21,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: const Text(
           'NoFakeTexi',
@@ -134,112 +135,126 @@ class Page1build extends State<Page1> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
-          const Image(
-            image: NetworkImage(
-                'https://i0.wp.com/learning4live.com/wp-content/uploads/2018/09/1-5.jpg?fit=1200%2C890&ssl=1'),
-            width: 1200,
-            height: 300,
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
-            child: TextField(
-              controller: _textEditingController3,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'กรอกระยะเวลา(ชั่วโมง)',
+    return SingleChildScrollView(
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            const Text(
+              'ระบบคำนวณราคาเหมาแท็กซี่',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 18,
               ),
-              onChanged: (String value1) {
-                km1 = int.parse(value1) as double;
-              },
             ),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
-            child: TextFormField(
-              controller: _textEditingController4,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'กรอกค่าทางด่วน(บาท)',
+            const SizedBox(
+              height: 20,
+            ),
+            const Image(
+              image: NetworkImage(
+                  'https://images.squarespace-cdn.com/content/v1/5a5dbe4632601eb31977f947/16d5d2bb-ff9c-43bc-a761-a77d7e4a0054/FB-IG-TWT+1040x1040.jpg?format=1000w'),
+              width: 400,
+              height: 300,
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
+              child: TextField(
+                controller: _textEditingController3,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'กรอกระยะเวลา(ชั่วโมง)',
+                ),
+                keyboardType: TextInputType.number,
+                onChanged: (String value1) {
+                  km1 = int.parse(value1) as double;
+                },
               ),
-              onChanged: (String value2) {
-                min1 = int.parse(value2) as double;
-              },
             ),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          ElevatedButton(
-            onPressed: () {
-              if (km1 >= 4) {
-                showDialog(
-                  context: context,
-                  builder: (ctx) => AlertDialog(
-                    title: const Text('แจ้งเตือน!!'),
-                    content: Text(
-                        "คุณจะต้องจ่ายค่าแท็กซี่ ${(km1 * 200) + (min1)} บาท"),
-                    actions: <Widget>[
-                      TextButton(
-                        onPressed: () {
-                          Navigator.of(ctx).pop();
-                        },
-                        child: Container(
-                          color: Colors.green,
-                          padding: const EdgeInsets.all(14),
-                          child: const Text("okay"),
+            const SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
+              child: TextFormField(
+                controller: _textEditingController4,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'กรอกค่าทางด่วน(บาท)',
+                ),
+                keyboardType: TextInputType.number,
+                onChanged: (String value2) {
+                  min1 = int.parse(value2) as double;
+                },
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                if (km1 >= 4) {
+                  showDialog(
+                    context: context,
+                    builder: (ctx) => AlertDialog(
+                      title: const Text('แจ้งเตือน!!'),
+                      content: Text(
+                          "คุณจะต้องจ่ายค่าแท็กซี่ ${(km1 * 200) + (min1)} บาท"),
+                      actions: <Widget>[
+                        TextButton(
+                          onPressed: () {
+                            Navigator.of(ctx).pop();
+                          },
+                          child: Container(
+                            color: Colors.green,
+                            padding: const EdgeInsets.all(14),
+                            child: const Text("okay"),
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                );
-              } else {
-                showDialog(
-                  context: context,
-                  builder: (ctx) => AlertDialog(
-                    title: const Text('แจ้งเตือน!!'),
-                    content: const Text(
-                        "การเหมารถจะต้องมีเวลาในการเช่าขั้นต่ำ 4 ชั่วโมง"),
-                    actions: <Widget>[
-                      TextButton(
-                        onPressed: () {
-                          Navigator.of(ctx).pop();
-                        },
-                        child: Container(
-                          color: Colors.green,
-                          padding: const EdgeInsets.all(14),
-                          child: const Text("okay"),
+                      ],
+                    ),
+                  );
+                } else {
+                  showDialog(
+                    context: context,
+                    builder: (ctx) => AlertDialog(
+                      title: const Text('แจ้งเตือน!!'),
+                      content: const Text(
+                          "การเหมารถจะต้องมีเวลาในการเช่าขั้นต่ำ 4 ชั่วโมง"),
+                      actions: <Widget>[
+                        TextButton(
+                          onPressed: () {
+                            Navigator.of(ctx).pop();
+                          },
+                          child: Container(
+                            color: Colors.green,
+                            padding: const EdgeInsets.all(14),
+                            child: const Text("okay"),
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                );
-              }
-            },
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.green)),
-            child: const Text('คำนวณ'),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          ElevatedButton(
-            onPressed: clearText,
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(
-                    const Color.fromARGB(255, 175, 160, 76))),
-            child: const Text('Clear'),
-          ),
-        ],
+                      ],
+                    ),
+                  );
+                }
+              },
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.green)),
+              child: const Text('คำนวณ'),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: clearText,
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(
+                      const Color.fromARGB(255, 175, 160, 76))),
+              child: const Text('Clear'),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -275,103 +290,117 @@ class Page2build extends State<Page2> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
-          const Image(
-            image: NetworkImage(
-                'https://i0.wp.com/learning4live.com/wp-content/uploads/2018/09/1-5.jpg?fit=1200%2C890&ssl=1'),
-            width: 1200,
-            height: 300,
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
-            child: TextField(
-              controller: _textEditingController1,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'กรอกระยะทาง(กิโลเมตร)',
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            const Text(
+              'ระบบคำนวณราคาแท็กซี่',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 18,
               ),
-              onChanged: (String value1) {
-                km2 = int.parse(value1) as double;
-                if (km2 >= 80) {
-                  price2 = 10.5;
-                } else if (km2 >= 60) {
-                  price2 = 9;
-                } else if (km2 >= 40) {
-                  price2 = 8.5;
-                } else if (km2 >= 20) {
-                  price2 = 8;
-                } else if (km2 >= 10) {
-                  price2 = 7;
-                } else if (km2 >= 1) {
-                  price2 = 6.5;
-                } else {
-                  price2 = 0;
-                }
-              },
             ),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
-            child: TextFormField(
-              controller: _textEditingController2,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'กรอกเวลารถติด(นาที)',
-              ),
-              onChanged: (String value2) {
-                min2 = int.parse(value2) as double;
-              },
+            const SizedBox(
+              height: 20,
             ),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          ElevatedButton(
-            onPressed: () {
-              showDialog(
-                context: context,
-                builder: (ctx) => AlertDialog(
-                  title: const Text('แจ้งเตือน!!'),
-                  content: Text(
-                      "คุณจะต้องจ่ายค่าแท็กซี่ ${(km2 * price2) + (min2 * 3)} บาท"),
-                  actions: <Widget>[
-                    TextButton(
-                      onPressed: () {
-                        Navigator.of(ctx).pop();
-                      },
-                      child: Container(
-                        color: Colors.green,
-                        padding: const EdgeInsets.all(14),
-                        child: const Text("okay"),
-                      ),
-                    ),
-                  ],
+            const Image(
+              image: NetworkImage(
+                  'https://images.squarespace-cdn.com/content/v1/5a5dbe4632601eb31977f947/502311cd-074a-416f-b5d7-919e8a7351ce/airasia+ride+%E0%B8%A5%E0%B8%94+50+%E0%B8%9A%E0%B8%B2%E0%B8%97+%E0%B9%84%E0%B8%9B%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%9A%E0%B8%B4%E0%B8%99.jpg'),
+              width: 400,
+              height: 300,
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
+              child: TextField(
+                controller: _textEditingController1,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'กรอกระยะทาง(กิโลเมตร)',
                 ),
-              );
-            },
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.green)),
-            child: const Text('คำนวณ'),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          ElevatedButton(
-            onPressed: clearText,
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(
-                    const Color.fromARGB(255, 175, 160, 76))),
-            child: const Text('Clear'),
-          ),
-        ],
+                keyboardType: TextInputType.number,
+                onChanged: (String value1) {
+                  km2 = int.parse(value1) as double;
+                  if (km2 >= 80) {
+                    price2 = 10.5;
+                  } else if (km2 >= 60) {
+                    price2 = 9;
+                  } else if (km2 >= 40) {
+                    price2 = 8.5;
+                  } else if (km2 >= 20) {
+                    price2 = 8;
+                  } else if (km2 >= 10) {
+                    price2 = 7;
+                  } else if (km2 >= 1) {
+                    price2 = 6.5;
+                  } else {
+                    price2 = 0;
+                  }
+                },
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
+              child: TextFormField(
+                controller: _textEditingController2,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'กรอกเวลารถติด(นาที)',
+                ),
+                keyboardType: TextInputType.number,
+                onChanged: (String value2) {
+                  min2 = int.parse(value2) as double;
+                },
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (ctx) => AlertDialog(
+                    title: const Text('แจ้งเตือน!!'),
+                    content: Text(
+                        "คุณจะต้องจ่ายค่าแท็กซี่ ${(km2 * price2) + (min2 * 3)} บาท"),
+                    actions: <Widget>[
+                      TextButton(
+                        onPressed: () {
+                          Navigator.of(ctx).pop();
+                        },
+                        child: Container(
+                          color: Colors.green,
+                          padding: const EdgeInsets.all(14),
+                          child: const Text("okay"),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              },
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.green)),
+              child: const Text('คำนวณ'),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: clearText,
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(
+                      const Color.fromARGB(255, 175, 160, 76))),
+              child: const Text('Clear'),
+            ),
+          ],
+        ),
       ),
     );
   }
