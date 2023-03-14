@@ -28,6 +28,6 @@
 
 ![การกรอกค่า และคำนวณ](https://im3.ezgif.com/tmp/ezgif-3-f96321ffde.gif)
 
-![การกดปุ่มย้อนกลับ]([https://user-images.githubusercontent.com/114043845/225044366-ea44ff64-ab9c-4157-a3ce-9dffca742143.png](https://im3.ezgif.com/tmp/ezgif-3-269fdbb3e6.gif))
+![การกดปุ่มย้อนกลับ](https://im3.ezgif.com/tmp/ezgif-3-269fdbb3e6.gif)
 
 
