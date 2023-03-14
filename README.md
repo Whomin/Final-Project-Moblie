@@ -24,3 +24,4 @@
 
 ### ตัวอย่างของแอปพลิเคชั่น NoFakeTaxi (แอปคำนวณหาค่าบริการแท็กซี่)
 ![image](https://user-images.githubusercontent.com/114043845/225033569-13c003c2-85a5-460f-8ff8-e11d32384d82.png)
+![gif](https://www.canva.com/design/DAFdLhOF9CM/u4ofOUJulLMqKF5mY9TQjw/edit?utm_content=DAFdLhOF9CM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
