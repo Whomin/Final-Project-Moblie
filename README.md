@@ -24,7 +24,7 @@
 [คลิปอธิบายแอปพิลเคชัน](https://youtu.be/SCleFKEkaEU) 
 
 # ไฟล์ APK
-[NoFakeTaxi (APK)]((https://drive.google.com/drive/folders/1rdOVxHFD6NeUjDM0Qq2tRrDDllWhdq66?usp=share_link))
+[NoFakeTaxi (APK)](https://drive.google.com/drive/folders/1rdOVxHFD6NeUjDM0Qq2tRrDDllWhdq66?usp=share_link)
 
 # ตัวอย่างของแอปพลิเคชั่น NoFakeTaxi (แอปคำนวณหาค่าบริการแท็กซี่)
 ### การกดเข้าบริการเหมาแท็กซี่
