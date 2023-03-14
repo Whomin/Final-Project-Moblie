@@ -26,7 +26,7 @@
 ![image](https://user-images.githubusercontent.com/114043845/225033569-13c003c2-85a5-460f-8ff8-e11d32384d82.png)
 
 การกดปุ่ม บริการแท็กซี่แบบเหมา
-![1](https://user-images.githubusercontent.com/114043845/225037218-42a98214-878c-4ae4-b0fd-6188d292ee58.gif)
+
 
 การกรอกตัวเลข
 ![1](https://im3.ezgif.com/tmp/ezgif-3-f96321ffde.gif)
