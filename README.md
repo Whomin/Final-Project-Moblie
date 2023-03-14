@@ -29,7 +29,7 @@
 ![1](https://user-images.githubusercontent.com/114043845/225037218-42a98214-878c-4ae4-b0fd-6188d292ee58.gif)
 
 การกรอกตัวเลข
-[1](https://im3.ezgif.com/tmp/ezgif-3-f96321ffde.gif)
+![1](https://im3.ezgif.com/tmp/ezgif-3-f96321ffde.gif)
 
 กดปุ่มคำนวณ
 
