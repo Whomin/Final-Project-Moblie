@@ -26,27 +26,27 @@
 
 ## ตัวอย่างของแอปพลิเคชั่น NoFakeTaxi (แอปคำนวณหาค่าบริการแท็กซี่)
 - การกดเข้าบริการเหมาแท็กซี่
-![การกดเข้าบริการเหมาแท็กซี่](https://im3.ezgif.com/tmp/ezgif-3-1dc9078e96.gif)
+![การกดเข้าบริการเหมาแท็กซี่](https://im3.ezgif.com/tmp/ezgif-3-1dc9078e96.gif) <br>
 
 - การกรอกค่า และปุ่มคำนวณในการเหมาแท็กซี่
-![การกรอกค่า และคำนวณ](https://im3.ezgif.com/tmp/ezgif-3-f96321ffde.gif)
+![การกรอกค่า และคำนวณ](https://im3.ezgif.com/tmp/ezgif-3-f96321ffde.gif) <br>
 
 - การกดปุ่ม Clear ในบริการเหมาแท็กซี่
-![การกดปุ่ม Clear](https://im3.ezgif.com/tmp/ezgif-3-269fdbb3e6.gif)
-
+![การกดปุ่ม Clear](https://im3.ezgif.com/tmp/ezgif-3-269fdbb3e6.gif) <br>
+ 
 - การกดปุ่มย้อนกลับในบริการเหมาแท็กซี่
-![การกดปุ่มย้อนกลับ](https://im3.ezgif.com/tmp/ezgif-3-fa15116231.gif)
+![การกดปุ่มย้อนกลับ](https://im3.ezgif.com/tmp/ezgif-3-fa15116231.gif) <br>
 
 - การกดเข้าบริการแท็กซี่
-![การกดเข้าบริการแท็กซี่](https://im3.ezgif.com/tmp/ezgif-3-b6c6d9107e.gif)
+![การกดเข้าบริการแท็กซี่](https://im3.ezgif.com/tmp/ezgif-3-b6c6d9107e.gif) <br>
 
 -การกรอกค่า และคำนวณในบิรการแท็กซี่
-![การกรอกค่า และคำนวณ2](https://im3.ezgif.com/tmp/ezgif-3-c2120df5dc.gif)
+![การกรอกค่า และคำนวณ2](https://im3.ezgif.com/tmp/ezgif-3-c2120df5dc.gif) <br>
 
 - การกดปุ่ม Clear ในบริการแท็กซี่
-![การกดปุ่ม Clear2](https://im3.ezgif.com/tmp/ezgif-3-731f8dd2cc.gif)
+![การกดปุ่ม Clear2](https://im3.ezgif.com/tmp/ezgif-3-731f8dd2cc.gif) <br>
 
 - การกดปุ่มย้อนกลับในบริการแท็กซี่
-![การกดปุ่มย้อนกลับ2](https://im3.ezgif.com/tmp/ezgif-3-3ab76311df.gif)
+![การกดปุ่มย้อนกลับ2](https://im3.ezgif.com/tmp/ezgif-3-3ab76311df.gif) <br>
 
 
