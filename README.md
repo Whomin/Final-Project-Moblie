@@ -26,5 +26,8 @@
 
 ### ตัวอย่างของแอปพลิเคชั่น NoFakeTaxi (แอปคำนวณหาค่าบริการแท็กซี่)
 
-![1](https://im3.ezgif.com/tmp/ezgif-3-f96321ffde.gif)
+![การกรอกค่า และคำนวณ](https://im3.ezgif.com/tmp/ezgif-3-f96321ffde.gif)
+
+![การกดปุ่มย้อนกลับ](https://user-images.githubusercontent.com/114043845/225044366-ea44ff64-ab9c-4157-a3ce-9dffca742143.png)
+
 
